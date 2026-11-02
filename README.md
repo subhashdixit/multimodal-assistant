@@ -121,3 +121,7 @@ The test suite checks calculation contracts and invalid inputs. It cannot establ
 The synthetic invoice passed local OCR and field reconciliation: subtotal 200 + tax 36 = total 236. This verifies that workflow on this fixture, not all invoice layouts. Text-model generation and vision-model inference both ran without API credentials. In an image-only test the small SmolVLM model hallucinated unrelated table details, so its option is explicitly **Experimental vision**. A running model is not evidence of accurate visual understanding.
 
 For document use, prefer image → local OCR → inspect/correct transcript → extract/reconcile fields or ask the text model about that transcript. Selecting a text model does not send it image pixels. Sample text is cleared when loading an image so that unrelated examples cannot silently contaminate its analysis. Model-generated amounts are unverified until checked against the original and reconciled.
+
+## Local dependency installation
+
+The maintained app is HTML/CSS/JavaScript and needs no Python packages. `requirements.txt` documents this; install development tools with `npm ci` using the pinned Node/npm versions. See [DEPENDENCIES.md](DEPENDENCIES.md). Original prototype requirements are preserved at `archive/prototype-requirements.in` where present; they are not the supported install command.
