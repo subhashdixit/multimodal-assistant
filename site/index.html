@@ -60,6 +60,11 @@
       </section>
       <section>
         <h2>2 · Choose your task</h2>
+        <p>
+          For documents, run OCR first. Qwen/SmolLM text models use recognized
+          or pasted text, not the image. Experimental vision can describe pixels
+          but may invent details; verify its output against the image.
+        </p>
         <label id="question-label"
           >Question / job requirements<textarea
             id="question"
@@ -92,7 +97,7 @@
                 Larger text · Qwen2.5 0.5B (~515 MB)
               </option>
               <option value="vision">
-                Image + text · SmolVLM 256M (~260 MB)
+                Experimental vision · SmolVLM 256M (~260 MB)
               </option>
             </select></label
           ><label

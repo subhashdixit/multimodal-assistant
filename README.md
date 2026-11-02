@@ -112,3 +112,9 @@ Original source files are retained. Default analytical examples and the default 
 Text/context ≤40,000 characters; local generation questions ≤600; local documents ≤5 MiB/60 pages; images ≤2 MiB/16 megapixels. Only PNG/JPEG for image analysis. No persistent document store or cross-device history. Source extraction can change reading order in complex PDFs. OCR and AI output require manual verification. Images are analyzed, not generated. No API key is needed for any default generation function.
 
 The test suite checks calculation contracts and invalid inputs. It cannot establish that an input dataset is representative, that a heuristic is scientifically correct for every domain, or that a result is suitable for an automated consequential decision. Read the original source alongside the maintained browser implementation when comparing behavior.
+
+## What the browser checks established
+
+The synthetic invoice passed local OCR and field reconciliation: subtotal 200 + tax 36 = total 236. This verifies that workflow on this fixture, not all invoice layouts. Text-model generation and vision-model inference both ran without API credentials. In an image-only test the small SmolVLM model hallucinated unrelated table details, so its option is explicitly **Experimental vision**. A running model is not evidence of accurate visual understanding.
+
+For document use, prefer image → local OCR → inspect/correct transcript → extract/reconcile fields or ask the text model about that transcript. Selecting a text model does not send it image pixels. Sample text is cleared when loading an image so that unrelated examples cannot silently contaminate its analysis. Model-generated amounts are unverified until checked against the original and reconciled.

@@ -12,8 +12,12 @@ import {
 import { $, announce, download } from "./ui.js";
 import { prepareGeneration } from "./model-policy.js";
 import { extractDocument } from "./documents.js";
-const config = await (await fetch("./config.json")).json();
-const example = await (await fetch("./example.json")).json();
+const config = await (
+  await fetch("./config.json", { cache: "no-store" })
+).json();
+const example = await (
+  await fetch("./example.json", { cache: "no-store" })
+).json();
 let image = null,
   previewURL = null,
   newsDocs = [],
@@ -194,8 +198,12 @@ async function generate() {
         "Shorten the evidence to 3,500 characters for local generation. Local extraction/retrieval still accepts longer documents.",
       );
     const request = { tool: config.tool, context, question, model };
-    if (image)
+    if (image && model === "vision")
       request.image = "data:" + image.mimeType + ";base64," + image.data;
+    if (image && model !== "vision" && !context.trim())
+      throw Error(
+        "Run local OCR first for text-based analysis, or choose Experimental vision to analyze pixels.",
+      );
     prepareGeneration(request);
     busy = true;
     $("generate").disabled = true;
@@ -243,7 +251,7 @@ async function generate() {
         const novel = unverifiedNumbers(data.answer, context);
         if (novel.length)
           $("validation").textContent +=
-            " WARNING: numbers absent from supplied evidence: " +
+            " WARNING: numbers not matched in supplied text: " +
             novel.join(", ") +
             ". These are unverified; check or remove them.";
         announce(
@@ -370,10 +378,11 @@ if ($("image")) {
         reader.readAsDataURL(file);
       });
       image = { mimeType: file.type, data: data.split(",")[1] };
+      if ($("context").value === example.sample) $("context").value = "";
       $("preview").src = previewURL;
       $("preview").hidden = false;
       announce(
-        "Image loaded locally. OCR is local; the vision model processes the image locally.",
+        "Image loaded locally. Start with OCR to read its text. Text models use that transcript; Experimental vision analyzes pixels and may misread them.",
       );
     } catch (error) {
       image = null;
