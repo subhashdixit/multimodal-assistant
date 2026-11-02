@@ -151,3 +151,7 @@ The supported lockfiles, runtime files and asset identities describe the maintai
 Exact versions prevent silent dependency upgrades. Operating-system libraries, CPU architecture, browser features and native-wheel availability can still affect execution or floating-point results. Use the pinned interpreter, a compatible supported system and the checks above. Unsupported wheel platforms fail explicitly instead of silently compiling against unrecorded build dependencies.
 
 External news/search APIs supply changing data independently of local package versions. Historical fixture data and model artifacts retain their repository identities. Future upgrades should change the exact version, corresponding lock/manifest and verification together in a reviewed PR.
+
+## Standard requirements.txt entry point
+
+The maintained browser app has no Python package dependencies. The root `requirements.txt` documents that fact. Use `npm ci` and the exact Node/npm versions above. Original prototype inputs are preserved as `archive/prototype-requirements.in` where present.
