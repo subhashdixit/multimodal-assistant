@@ -1,0 +1,5 @@
+{
+  "tool": "multimodal",
+  "title": "Multimodal Assistant",
+  "gateway": "https://portfolio-ai-gateway.onrender.com"
+}
