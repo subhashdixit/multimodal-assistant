@@ -2,7 +2,7 @@
 
 [Open the application](https://subhashdixit.github.io/multimodal-assistant/) · [Report an issue](https://github.com/subhashdixit/multimodal-assistant/issues)
 
-Inspect image text locally and optionally ask a server-side vision model questions.
+Inspect image text locally and optionally ask a local experimental vision model questions.
 
 ## What the finished application does
 
