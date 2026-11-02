@@ -1,4 +1,5 @@
 {
+  "vendor/VERSIONS.json": "01f1b217e4b5b03678465aa3b174e409fc831823ca55007aaac5cf483093e60e",
   "vendor/ocr/CORE-LICENSE": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
   "vendor/ocr/worker.min.js": "576b7df7e3393e137e51849357c9adb53fe7ac1bb69bfa06cf3d61520f182c6d",
   "vendor/ocr/tesseract.js": "64871d76c75609fd5413b88a8171e2ef40deedd77d5875ba23df104b2d05eb29",
