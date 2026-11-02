@@ -1,5 +1,8 @@
 # Multimodal Assistant
 
+**Reproducible versions:** [Dependency versions and exact setup](DEPENDENCIES.md).
+
+
 [Open the application](https://subhashdixit.github.io/multimodal-assistant/) · [Report an issue](https://github.com/subhashdixit/multimodal-assistant/issues)
 
 Inspect image text locally and optionally ask a local experimental vision model questions.

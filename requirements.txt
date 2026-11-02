@@ -1,3 +1,5 @@
+# Historical prototype dependencies: preserved for reference.
+# Supported maintained-release installation and exact locks: DEPENDENCIES.md.
 streamlit
 google-generativeai
 python-dotenv
