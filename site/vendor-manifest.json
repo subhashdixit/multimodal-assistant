@@ -1,0 +1,22 @@
+{
+  "vendor/ocr/CORE-LICENSE": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+  "vendor/ocr/worker.min.js": "576b7df7e3393e137e51849357c9adb53fe7ac1bb69bfa06cf3d61520f182c6d",
+  "vendor/ocr/tesseract.js": "64871d76c75609fd5413b88a8171e2ef40deedd77d5875ba23df104b2d05eb29",
+  "vendor/ocr/tesseract-core-lstm.wasm": "66b17df6e20c5329a17ffa9c202a47eaa3e32500b253d4c7f38e7f2bc01457c3",
+  "vendor/ocr/eng.traineddata.gz": "f0c3fab56332db42d0749cd767e50cfe3c58ef255c199b13aeccbeab31a5dcfd",
+  "vendor/ocr/JS-LICENSE.txt": "cdf963ced7d25a0f98901a547647b4d6e2dbe0197fd78c87a059a87b0e542fe2",
+  "vendor/ocr/WORKER-LICENSE.txt": "45f54171aeaa1d10c0c1a66f374b7bba1f02472b1487fbe892eec04f840002ac",
+  "vendor/ocr/tesseract-core-lstm.wasm.js": "eef5f8b2f8e20e150680b20adaec4a60babafee3adbe8a94583c81fee46e8680",
+  "vendor/ocr/TESSDATA-LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+  "vendor/ocr/hin.traineddata.gz": "0bd333de3adb79519f5d90fb28ec9a1c1a982d5745b79a6f6fc37147bea1060d",
+  "vendor/pdfjs/LICENSE": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+  "vendor/pdfjs/pdf.mjs": "57456c8e0c81e46be31174b499ef77f2b9f5ee46d04412ba627320a36755d4c2",
+  "vendor/pdfjs/pdf.worker.mjs": "9536359f1b8367850d485731ca1d5e45c159a7b7a0912325e539937aa21ceb18",
+  "vendor/ai/ort-wasm-simd-threaded.asyncify.mjs": "0966b6105cd936744498aa60df7a22cbd47af3374dbc64a9ab561c08a71e3611",
+  "vendor/ai/LOCAL-CHANGES.txt": "6e92fed06c93141a0092cec80d6db63c7d794dacd60f83284eee26ad19c2c5fa",
+  "vendor/ai/ort-wasm-simd-threaded.jspi.mjs": "6b37a3974dbd96a752fdc1805e1bdc2dca3ead7e380703c092240c2352c71dbf",
+  "vendor/ai/TRANSFORMERS-LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+  "vendor/ai/ort-wasm-simd-threaded.jspi.wasm": "173146c55eb8c7e01f8be3f7b7376fbde14118d91607583ab7caf4feac98e59c",
+  "vendor/ai/ONNX-RUNTIME-LICENSE": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c",
+  "vendor/ai/ort-wasm-simd-threaded.asyncify.wasm": "49871f5a4409519797e127440868a6d1923339d9185907f301a5b2a1d90af082"
+}
